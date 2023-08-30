@@ -25,7 +25,7 @@ public class UserExternalClientImpl implements UserExternalClient {
         log.info("---UserExternalClient---");
         User requestBody = new User();
         BeanUtils.copyProperties(userEntity, requestBody);
-        //ResponseEntity<String> response = restTemplate.postForEntity(userNotificationUrl, s, String.class);
+        //ResponseEntity<String> response = restTemplate.postForEntity(userNotificationUrl, requestBody, String.class);
         return UserExternalClientResponse.builder().isSuccess(true).build();
     }
 }

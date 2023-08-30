@@ -24,7 +24,11 @@ We can use below property in application yml file to create above tables automat
 
 `spring.batch.jdbc.initialize-schema: ALWAYS`
 
+<img width="548" alt="image" src="https://github.com/sovanm10/spring-batch-example/assets/26097904/47f76d33-e9e9-4d79-af30-ab2dd5b419ed">
+
 If we want to create the batch metadata tables but not in runtime then we can create them manually
+
+
 #### The BATCH_JOB_INSTANCE Table
 The BATCH_JOB_INSTANCE table holds all information relevant to a JobInstance.
 
